@@ -55,7 +55,7 @@
     <!-- When you have messages to tell, remember that center align is not always the best choice -->
     <div class="container-md p-3 my-3 border bg-light">
         <h2>Who we are?</h3>
-        <p>The University of Ottawa Gentlemen's Room Barber Shop is a one-of-a-kind grooming experience for the modern man. Located in the heart of the university campus, we offer a range of services to help you look and feel your best. From haircuts and shaves to grooming products and accessories, we have everything you need to elevate your style.
+        <p>The University of Ottawa Gentlemen's Room Barber Shop is a one-of-a-kind grooming experience for the modern man. Located in the heart of the university campus, we offer a range of services to help you look and feel your best 24 hours, 7 days a week! From haircuts and shaves to grooming products and accessories, we have everything you need to elevate your style.
 
             Our barbers are highly skilled and have a passion for men's grooming. We use only the finest products and tools to ensure a top-notch experience for every client. Whether you're looking for a classic, sophisticated look or something more modern and edgy, we can create a custom style that fits your personality and lifestyle.
             
@@ -185,6 +185,37 @@
 
     <div class="container p-3">
         <h2>Book an appointment:</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Name:</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="date">Date of Appointment:</label>
+                <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time:</label>
+                <input type="time" class="form-control" id="time">
+            </div>
+            <div class="form-group">
+                <label for="appointmentType">Appointment For:</label>
+                <select id="appointmentType" name="appointmentType">
+                <option value="empty"></option>
+                <option value="haircut">Haircut</option>
+                <option value="shave">Shave</option>
+                <option value="beardTrim">Beard Trim</option>
+                <option value="facial">Facial</option>
+                <option value="hairDesign">Hair Design</option>
+                <option value="scalpTreatment">Scalp Treatment</option>
+                </select>
+            </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
     <div class="text-center">
