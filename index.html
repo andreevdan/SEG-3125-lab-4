@@ -22,6 +22,7 @@
 
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="scripts.js" type="text/javascript"></script>
 </head>
 
 
@@ -73,32 +74,39 @@
             <tr>
                 <th>Service</th>
                 <th>Description</th>
+                <th>Price</th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>Haircut</td>
                 <td>A traditional barbering service that includes a thorough consultation, shampoo, cut, and style to achieve a customized look that fits your face shape, hair type, and lifestyle.</td>
+                <td>$20.00</td>
             </tr>
             <tr>
                 <td>Shave</td>
-                <td>A classic grooming experience that includes a hot towel treatment, pre-shave oil, lather, and a straight-razor shave to achieve a close, smooth, and refreshed look.a</td>
+                <td>A classic grooming experience that includes a hot towel treatment, pre-shave oil, lather, and a straight-razor shave to achieve a close, smooth, and refreshed look.</td>
+                <td>$5.00</td>
             </tr>
             <tr>
                 <td>Beard Trim</td>
                 <td>A specialized grooming service that includes a beard and mustache trim, shaping, and styling to help you maintain a well-groomed and stylish facial hair look.</td>
+                <td>$10.00</td>
             </tr>
             <tr>
                 <td>Facial </td>
                 <td>A luxurious grooming experience that includes a deep-cleansing, exfoliating, and moisturizing treatment to refresh and rejuvenate your skin, leaving you feeling revitalized and refreshed.</td>
+                <td>$25.00</td>
             </tr>
             <tr>
                 <td>Hair Design</td>
                 <td>A creative barbering service that includes a personalized consultation, cutting, and styling techniques to achieve a unique, edgy, or artistic look that showcases your personality and style.</td>
+                <td>$30.00</td>
             </tr>
             <tr>
                 <td>Scalp Treatment</td>
                 <td>A therapeutic grooming experience that includes a deep-cleansing, exfoliating, and moisturizing treatment to revitalize and nourish your scalp and hair, promoting healthy growth and preventing hair loss.</td>
+                <td>$15.00</td>
             </tr>
             </tbody>
         </table>
@@ -182,6 +190,29 @@
             </div>
         </div>
     </div>
+    
+    <div class="container p-3">
+        <h2>Our haircut gallery</h2>
+        <div class="row">
+            <div class="col-">
+                <img src="images/haircut1.jpg" alt="haircut1">
+            </div>
+            <div class="col-">
+                <img src="images/haircut2.jpg" alt="haircut2">
+            </div>
+            <div class="col-">
+                <img src="images/haircut3.jpg" alt="haircut3">
+            </div>
+            <div class="col-">
+                <img src="images/haircut4.jpg" alt="haircut4">
+            </div>
+            <div class="col-">
+                <img src="images/haircut5.jpg"  alt="haircut5">
+            </div>
+            <div class="col-">
+                <img src="images/haircut6.jpg" alt="haircut6">
+        </div>
+    </div>
 
     <div class="container p-3">
         <h2>Book an appointment:</h2>
@@ -206,15 +237,15 @@
                 <label for="appointmentType">Appointment For:</label>
                 <select id="appointmentType" name="appointmentType">
                 <option value="empty"></option>
-                <option value="haircut">Haircut</option>
-                <option value="shave">Shave</option>
-                <option value="beardTrim">Beard Trim</option>
-                <option value="facial">Facial</option>
-                <option value="hairDesign">Hair Design</option>
-                <option value="scalpTreatment">Scalp Treatment</option>
+                <option value="haircut">Haircut $20.00</option>
+                <option value="shave">Shave $5.00</option>
+                <option value="beardTrim">Beard Trim $10.00</option>
+                <option value="facial">Facial $25.00</option>
+                <option value="hairDesign">Hair Design $30.00</option>
+                <option value="scalpTreatment">Scalp Treatment $15.00</option>
                 </select>
             </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" onclick="popup()">Submit</button>
         </form>
     </div>
 
